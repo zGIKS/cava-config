@@ -23,8 +23,8 @@ framerate = 60
 # The number of bars (0-512). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
 ; bars = 0
-bar_width = 1
-bar_spacing = 2
+bar_width = 2
+bar_spacing = 1
 # bar_height is only used for output in "noritake" format
 ; bar_height = 32
 
@@ -237,7 +237,7 @@ show_idle_bar_heads = 0
 # a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # default is to keep current terminal color
 background = default
-foreground = cyan
+; foreground = cyan
 
 # SDL and sdl_glsl only support hex code colors, these are the default:
 ; background = '#111111'
@@ -247,15 +247,15 @@ foreground = cyan
 # Gradient mode, only hex defined colors are supported,
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
-; gradient = 0
-; gradient_color_1 = '#59cc33'
-; gradient_color_2 = '#80cc33'
-; gradient_color_3 = '#a6cc33'
-; gradient_color_4 = '#cccc33'
-; gradient_color_5 = '#cca633'
-; gradient_color_6 = '#cc8033'
-; gradient_color_7 = '#cc5933'
-; gradient_color_8 = '#cc3333'
+gradient = 1
+gradient_color_1 = '#1a1a1a'
+gradient_color_2 = '#2d2d2d'
+gradient_color_3 = '#454545'
+gradient_color_4 = '#5c5c5c'
+gradient_color_5 = '#737373'
+gradient_color_6 = '#8a8a8a'
+gradient_color_7 = '#a1a1a1'
+gradient_color_8 = '#b8b8b8'
 
 
 # Horizontal is only supported on noncurses output.
@@ -306,7 +306,7 @@ foreground = cyan
 # Noise reduction, int 0 - 100. default 77
 # the raw visualization is very noisy, this factor adjusts the integral and gravity filters to keep the signal smooth
 # 100 will be very slow and smooth, 0 will be fast but noisy.
-noise_reduction = 85
+noise_reduction = 70
 
 
 [eq]
